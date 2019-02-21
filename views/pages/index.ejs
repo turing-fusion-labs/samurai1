@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+</head>
+  <body>
+    <div class="container">
+      <header>
+        <% include ../partials/header %>
+      </header>
+      <fieldset>
+        <form action="/item" method="post">
+          <input name="name" type="text" class="ghost-input" placeholder="Enter Item Name" required>
+          <input name="type" type="text" class="ghost-input" placeholder="Enter Item Type" required>
+          <input type="submit" class="ghost-button" value="Submit">
+        </form>
+      </fieldset>
+    </div>
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
+</html>
